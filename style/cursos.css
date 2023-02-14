@@ -1,0 +1,172 @@
+h1 {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+main {
+    flex-direction: column;
+}
+
+.cursos-lista {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+    margin-top: -14px;
+}
+
+.cursos-lista li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(32 32 32);
+    color: white;
+
+}
+
+.cursos-item {
+    box-shadow: 3px 3px 3px rgb(178, 179, 236);
+}
+
+
+.cursos-lista img {
+    width: 100%;
+    min-height: 400px;
+}
+
+.cursos-descrição {
+    padding: 12px 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background-color: var(--secundary-color);
+    width: 24px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.cursos-lista li:hover span {
+    width: 60px;
+    transition: 0.6s;
+}
+
+.cursos-descrição ul {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+
+
+.cursos-item li {
+    background-color: grey;
+    border-radius: 6px;
+    min-height: 24px;
+    padding: 16px 12px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.cursos-descrição a {
+    background-color: var(--secundary-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    right: -35px;
+    bottom: 10px;
+    transform: rotate(-28deg);
+}
+
+.enfermtxt {
+    flex-wrap: wrap;
+    /* quebrar a linha*/
+}
+
+
+
+
+
+/* para celular*/
+@media screen and (max-width: 600px) {
+
+    navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+
+    }
+
+    main {
+        flex-wrap: wrap;
+
+    }
+
+    .cursos-lista li {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .cursos-descrição ul {
+        flex-wrap: wrap;
+    }
+
+
+
+    .cursos-descrição a {
+        transform: rotate(40deg);
+        top: 30px;
+
+    }
+
+
+
+
+    footer {
+        margin-top: 25px;
+    }
+
+
+}
+
+
+
+/* para tablet*/
+@media screen and (max-width: 1100px) {
+
+    navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+
+    }
+
+    main {
+        flex-wrap: wrap;
+
+    }
+
+    .cursos-descrição ul {
+        flex-wrap: wrap;
+    }
+
+
+    .cursos-lista {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: -14px;
+        max-width: 840px;
+
+    }
+
+}

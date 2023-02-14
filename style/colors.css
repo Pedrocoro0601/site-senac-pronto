@@ -1,0 +1,6 @@
+:root{ /* envolver todos os elementos*/
+    --primary-color: rgb(28, 29, 94);
+    --secundary-color: rgb(245, 160, 0);
+    --bg-color: rgb(255, 255, 255);
+    --text-color: rgb(0, 0, 0);
+}
